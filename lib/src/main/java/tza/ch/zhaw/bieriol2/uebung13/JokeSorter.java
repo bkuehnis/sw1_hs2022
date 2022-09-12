@@ -41,7 +41,7 @@ public class JokeSorter {
 			answer = keyScan.nextLine();
 
 			if (answer.equals("y")) {
-				goodjokesWriter.write(yjoke.getCategory() + ":" + "\n" + output + "\n\n");
+				goodjokesWriter.write(joke.getCategory() + ":" + "\n" + output + "\n\n");
 				goodjokesWriter.close();
 			} else {
 				badjokesWriter.write(joke.getCategory() + ":" + "\n" + output + "\n\n");
