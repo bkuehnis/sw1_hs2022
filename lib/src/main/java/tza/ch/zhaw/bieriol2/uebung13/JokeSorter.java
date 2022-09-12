@@ -30,7 +30,7 @@ public class JokeSorter {
 			Joke joke = gson.fromJson(res.body(), Joke.class);
 
 			if (joke.getType().equals("twopart")) {
-				output = "A: " + joke.getSetup() + "\n" + "B: " + joke.getDelivery();
+				output = "A: " + joke.getSetup() + "\n" + " B: " + joke.getDelivery();
 
 			} else if (joke.getType().equals("single")) {
 				output = joke.getJoke();
